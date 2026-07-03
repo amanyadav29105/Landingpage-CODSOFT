@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelX | Professional Travel Agency</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-slate-950 text-white font-sans overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 flex justify-between items-center py-6 px-10 bg-slate-950/80 backdrop-blur-md border-b border-white/10">
+        <div class="text-2xl font-bold tracking-tighter">TravelX</div>
+
+        <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+            <a href="#home" class="hover:text-cyan-400 transition">Home</a>
+            <a href="#destinations" class="hover:text-cyan-400 transition">Destinations</a>
+            <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
+        </div>
+
+        <button id="menu-btn" class="md:hidden text-white text-2xl">
+            ☰
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed top-20 left-0 w-full bg-slate-900 p-6 flex flex-col space-y-4 md:hidden z-40 text-center">
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero -->
+    <section id="home" class="hero-bg h-screen flex flex-col justify-center items-center text-center px-6">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6" data-aos="fade-up">
+            Explore The World's <br>
+            <span class="text-cyan-400">Hidden Beauty</span>
+        </h1>
+
+        <p class="text-lg text-slate-300 mb-10 max-w-lg" data-aos="fade-up" data-aos-delay="200">
+            Discover luxurious destinations and unforgettable experiences.
+        </p>
+
+        <a href="#destinations" class="bg-cyan-500 hover:bg-cyan-600 px-8 py-3 rounded-full font-semibold transition">
+            Start Journey
+        </a>
+    </section>
+
+    <!-- Destinations -->
+    <section id="destinations" class="py-20 px-8 md:px-20">
+        <h2 class="text-4xl font-bold text-center mb-10" data-aos="fade-up">
+            Popular Destinations
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="card" data-aos="fade-up">
+                <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=500&q=80">
+                <h3 class="text-xl font-bold mt-4">Maldives</h3>
+            </div>
+
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=500&q=80">
+                <h3 class="text-xl font-bold mt-4">Bali</h3>
+            </div>
+
+            <div class="card" data-aos="fade-up" data-aos-delay="300">
+                <img src="https://images.unsplash.com/photo-1502784444187-359ac186c5bb?auto=format&fit=crop&w=500&q=80">
+                <h3 class="text-xl font-bold mt-4">Switzerland</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 bg-slate-900">
+        <div class="max-w-xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">Get In Touch</h2>
+
+            <form action="https://formspree.io/f/mykarwbp" method="POST">
+                
+                <!-- Extras -->
+                <input type="hidden" name="_subject" value="New TravelX Inquiry">
+                <input type="text" name="_gotcha" style="display:none">
+
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Scroll Top -->
+    <button id="scrollToTop" class="scroll-btn">↑</button>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+</body>
+                  </html>
